@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+    <style>
+        img{height: 500px;width: 500px;}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <img id="a" src="./apple.jpg">
+    <img id="b" src="./sky.jpg"><br><br>
+    <button style="border:none ; width:70px;height:30px;border-radius:12px;background: linear-gradient(145deg, #cacaca, #f0f0f0);box-shadow:  12px 12px 20px #9f9f9f,-12px -12px 20px #ffffff;">Hide</button>
+    </center>
+    <script>
+        $(document).ready(function(){
+            $("#b").hide();
+            $("button").click(function(){
+                $("#a").slideUp("slow",function(){
+                    $("#b").slideDown("slow");
+                })
+            });
+        });
+    </script>
+</body>
+</html>
