@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <img style=" display: none; height: 500px;width: 500px ;" id="1" src="https://cdn.wallpapersafari.com/62/39/1TrsJc.jpg" alt="">
+        <img style=" display: none; height: 500px;width: 500px ;" id="2" src="https://wallpaperaccess.com/full/848177.jpg" alt=""><br><br>
+        <button>Click Me</button>
+    </center>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("img").toggle(2000);
+            });
+        });
+    </script>
+</body>
+
+</html>
